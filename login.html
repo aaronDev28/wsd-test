@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="login_style.css">
+    <script type="text/javascript">
+      function showMessage(){
+        alert("Login Successful!");
+      }
+    </script>
+</head>
+<body>
+    <div id="test">
+
+    <div class="loginbox">
+    <img src="avatarblue.png" class="avatar">
+        <h1>Enter Details Here</h1>
+        <form action="login.html" onsubmit="showMessage()">
+            <br>
+            <label for id="StudName">User Email</label>
+            <input type="email" id="StudName" name="userId" autocomplete="off" placeholder="Enter User Email" required>
+            <br>
+            <label for id="StudPass">Password</label>
+            <input type="password" id="StudPass" name="pass" autocomplete="off" placeholder="Enter Password" required>
+            <input type="submit" name="sbmit" value="Login" >
+            <p align="center">Don't have an account? <a style="color: #0084ff;" href="registration.html">Sign Up</a></p>
+        </form> 
+    </div>
+    </div>
+</body>
+</html>

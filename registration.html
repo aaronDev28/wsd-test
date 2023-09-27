@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="login_style.css">
+    <script type="text/javascript">
+      function showMessage(form){
+        password1 = form.password1.value; 
+        password2 = form.password2.value; 
+        if (password1 != password2) { 
+            alert ("\nPasswords did not match. Please try again...")
+            return false;
+          }
+        else{ 
+            return true; 
+          } 
+      }
+    </script>
+    <style type="text/css">
+      .loginbox{
+        width: 750px;
+        height: 820px;
+        top: 70.75%;
+      }
+      .loginbox input[type="submit"]
+      {
+        background: #48018f;
+      }
+      .loginbox input[type="submit"]:hover
+      {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+      }
+    </style>
+
+</head>
+<body style="background-image: linear-gradient(to right,#9747de, #bf89f0, #9747de);">
+    <div id="test">
+
+    <div class="loginbox">
+    <img src="avatarpurple.png" class="avatar">
+        <h1>Enter Details Here</h1>
+        <form action="success.html" onsubmit="return showMessage(this)">
+            <br>
+
+            <label for id="StudName">Full Name</label>
+            <input type="text" id="StudName" name="userId" autocomplete="off" placeholder="Enter Full Name" required>
+            <label for id="gender">Gender</label>
+            <input type="text" id="gender" name="gender" autocomplete="off" placeholder="Enter Gender" required>
+            <label for id="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" autocomplete="off" placeholder="Enter Phone" required>
+            <label for id="age">Age</label>
+            <input type="number" id="age" name="age" autocomplete="off" placeholder="Enter Age" required>
+            <label for id="password1">Password</label>
+            <input type="password" id="password1" name="password1" autocomplete="off" placeholder="Enter Password" required>
+            <label for id="password2">Confirm Password</label>
+            <input type="password" id="password2" name="password2" autocomplete="off" placeholder="Enter Password" required><br><br>
+            <input type="checkbox" id="check" name="check" value="agree" required>
+            <label for="check" style="font-weight: normal;"> I have read and agree to the <a href="https://www.google.com/" style="color: #0084ff;">Terms and Conditions</a>.</label><br>
+            <input type="checkbox" id="check2" name="check2" value="agree">
+            <label for="check2" style="font-weight: normal;">Subscribe to our Updates and Newsletter.</a></label>
+            <input type="submit" name="sbmit" value="Register">
+
+
+        </form> 
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body, html {
+  background-image: linear-gradient(to right,#9747de, #bf89f0, #9747de);
+}
+
+#wrapper {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+h1 {
+  color: #50159e;
+  text-shadow: -1px -2px 3px rgba(17, 17, 17, 0.3);
+  text-align: center;
+  font-family: "Monsterrat", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: -5px;
+}
+
+h1 underline {
+  border-top: 4px solid rgba(163, 112, 230, 0.3);
+  border-bottom: 4px solid rgba(163, 112, 230, 0.3);
+}
+.center {
+  display: block;
+  margin-top: 22px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 800px) {
+  #wrapper{
+    width: 80%;
+    margin-top: 45%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  #wrapper{
+    width: 80%;
+    margin-top: 45%;
+  }
+}
